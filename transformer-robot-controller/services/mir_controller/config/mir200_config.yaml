@@ -1,0 +1,22 @@
+fleet:
+  robots_deployed: ['mir200_0']
+
+mir200_0:
+  communication:
+    ip_address: '192.168.1.9'
+    api_path: 'api/v2.0.0'
+    username: Distributor
+    password: distributor
+    timeout_seconds: 2
+
+  missions:
+    #move_to_3R_dock: 'Return_Cart_1-3R'
+    cart_to_3R_dock: 'Return_Cart_1-3R'
+    cart_from_3R_dock: 'Get_Cart_1-3R'
+    #move_to_loading_area: "Dock to 3R Loading Area"
+    #move_to_charger: ""
+
+  registers:
+    cart_present: 5
+    cart_get_or_return: 10
+    docking_bolts_moving: 11
